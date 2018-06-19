@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:grx="http://schemas.android.com/apk/res-auto">
+    <GrxPreferenceCategory android:title="@string/skip_tracks_category" />
+	<GrxInfoText android:summary="@string/info_skip_tracks" />
+	  <GrxSwitchPreference android:title="@string/enable_skip_tracks" android:key="b_skip_tracks" android:defaultValue="true" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="SKIP_TRACKS" />
+	  <GrxCheckBoxPreference android:title="@string/double_tap_skip_tracks"  android:key="b_doble_click_skip_tracks"
+		  grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="SKIP_TRACKS" android:dependency="b_skip_tracks" android:defaultValue="true" />
+
+    
+</PreferenceScreen>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:grx="http://schemas.android.com/apk/res-auto">
+
+    <GrxSwitchPreference android:title="@string/enable_floating_ball_view" android:key="fbv_enabled" android:defaultValue="false"
+        grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="FBV_CONFIG"/>
+
+    <GrxPreferenceCategory android:title="hidden" android:dependency="fbv_enabled" grx:hiddenCategory="true" >
+
+            <GrxButtonPreference android:title="" android:key="rkbutton1"   grx:button_Style="big"
+                grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="FBV_CONFIG" />
+            <GrxSeekBar android:title="@string/fbv_size" android:key="fbv_size"
+                android:defaultValue="14" grx:minValue="8" grx:maxValue="24" grx:units=" dp" grx:showPopup="true" grx:interval="1"/>
+            <GrxColorPicker android:title="@string/background_color" android:key="fbv_bgcolor" grx:showAlphaSlider="true" android:defaultValue="0x84ffffff" />
+      <!--      <GrxCheckBoxPreference android:title="@string/fbv_use_bg_img" android:key="fbv_useimg" android:defaultValue="false"/>
+            <GrxPickImage android:title="@string/select_bg_image" android:key="fbv_imguri" grx:sizeX="300" grx:sizeY="300"  android:dependency="fbv_useimg"/>
+            <GrxSeekBar android:title="@string/image_opacity" android:key="fbv_imgopacity" android:defaultValue="100" android:dependency="fbv_useimg" grx:minValue="0" grx:maxValue="100" grx:units=" %" grx:interval="5" grx:showPopup="true" /> -->
+            <GrxColorPicker android:title="@string/fbv_ball_color" android:key="fbv_ballcolor" grx:showAlphaSlider="true" android:defaultValue="0x42888888" />
+            <GrxCheckBoxPreference android:title="@string/fbv_vibrate" android:key="fbv_vibrate" android:defaultValue="true"/>
+            <GrxButtonPreference android:title="" android:key="rkbutton0"   grx:button_Style="big"
+                grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="FBV_CONFIG" />
+    </GrxPreferenceCategory>
+</PreferenceScreen>

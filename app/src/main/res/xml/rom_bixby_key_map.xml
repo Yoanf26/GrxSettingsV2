@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:grx="http://schemas.android.com/apk/res-auto">
+
+    <GrxSwitchPreference android:title="@string/enable_bixby_km" android:key="b_bbk_map_enabled" android:defaultValue="false"
+        grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="BIXBY_KEY_MAPPING"/>
+
+    <GrxSeekBar android:title="@string/double_tap_maxtime" android:key="b_bbkmap_dt_timeout" android:dependency="b_bbk_map_enabled"
+        android:defaultValue="140" grx:minValue="100" grx:maxValue="700" grx:units=" mS" grx:showPopup="true" grx:interval="20"
+        grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="BIXBY_KEY_MAPPING"/>
+
+    <GrxInfoText android:summary="@string/press_button_to_apply"  android:dependency="b_bbk_map_enabled"/>
+
+    <GrxPreferenceCategory android:title="hidden" android:dependency="b_bbk_map_enabled" grx:hiddenCategory="true" >
+
+        <PreferenceScreen android:title="@string/when_screen_off" android:key="bbso"  >
+
+            <GrxPreferenceCategory android:title="@string/bb_screen_off" grx:centerHorizontal="true"/>
+
+            <GrxSingleSelection android:title="@string/single_tap_action" android:key="b_bbkmap_st_S0"  android:defaultValue="1"
+                grx:optionsArray="@array/actions_screen_off_options" grx:valuesArray="@array/actions_screen_off_values"  />
+
+            <GrxSingleSelection android:title="@string/double_tap_action" android:key="b_bbkmap_dt_SO" android:defaultValue="0"
+                grx:optionsArray="@array/actions_screen_off_options" grx:valuesArray="@array/actions_screen_off_values"  />
+
+            <GrxSingleSelection android:title="@string/long_press_action" android:key="b_bbkmap_lp_SO" android:defaultValue="1"
+                grx:optionsArray="@array/actions_screen_off_options" grx:valuesArray="@array/actions_screen_off_values"  />
+
+            <GrxButtonPreference android:title="" android:key="pkbutton3"   grx:button_Style="big"
+                grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="BIXBY_KEY_MAPPING" />
+
+        </PreferenceScreen>
+
+
+
+
+
+        <PreferenceScreen android:title="@string/when_lock_screen" android:key="bbls"  >
+
+            <GrxPreferenceCategory android:title="@string/bb_lock_screen" grx:centerHorizontal="true"/>
+
+            <GrxSingleSelection android:title="@string/single_tap_action" android:key="b_bbkmap_st_LS"  android:defaultValue="5"
+                grx:optionsArray="@array/mapping_all_options" grx:valuesArray="@array/mapping_all_options_values"  />
+
+            <GrxSingleSelection android:title="@string/double_tap_action" android:key="b_bbkmap_dt_LS" android:defaultValue="0"
+                grx:optionsArray="@array/mapping_all_options" grx:valuesArray="@array/mapping_all_options_values"  />
+
+            <GrxSingleSelection android:title="@string/long_press_action" android:key="b_bbkmap_lp_LS" android:defaultValue="0"
+                grx:optionsArray="@array/mapping_all_options" grx:valuesArray="@array/mapping_all_options_values"  />
+
+            <GrxButtonPreference android:title="" android:key="pkbutton1"   grx:button_Style="big"
+                grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="BIXBY_KEY_MAPPING" />
+
+        </PreferenceScreen>
+
+        <PreferenceScreen android:title="@string/when_home_screen" android:key="bbhs">
+
+            <GrxPreferenceCategory android:title="@string/bb_home_screen" grx:centerHorizontal="true"/>
+
+
+            <GrxButtonPreference android:key="pkbutton2"  grx:button_Style="big"
+                grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="BIXBY_KEY_MAPPING" />
+
+            <GrxPreferenceCategory android:title="@string/cat_single_tap" />
+
+
+            <GrxSingleSelection android:title="@string/single_tap_action" android:key="b_bbkmap_st" android:defaultValue="22"
+                grx:clickRules="-1#b_bbkmap_ca_st#,NULL,"
+                grx:optionsArray="@array/mapping_all_options" grx:valuesArray="@array/mapping_all_options_values"  />
+
+            <GrxAccess android:title="@string/select_app_act_short_st" android:key="b_bbkmap_ca_st"
+                grx:depRule="ENABLE#b_bbkmap_st#STRING#-1"
+                grx:showShortcuts="true" grx:showApplications="true" grx:showActivities="true" grx:arrowColor="?complementary_color1" />
+
+
+
+            <GrxPreferenceCategory android:title="@string/cat_double_tap" />
+
+
+            <GrxSingleSelection android:title="@string/double_tap_action" android:key="b_bbkmap_dt" android:defaultValue="35"
+                grx:clickRules="-1#b_bbkmap_ca_dt#,NULL,"
+                grx:optionsArray="@array/mapping_all_options" grx:valuesArray="@array/mapping_all_options_values"  />
+            <GrxAccess android:title="@string/select_app_act_short_st" android:key="b_bbkmap_ca_dt"
+                grx:depRule="ENABLE#b_bbkmap_dt#STRING#-1"
+                grx:showShortcuts="true" grx:showApplications="true" grx:showActivities="true" grx:arrowColor="?complementary_color1" />
+
+            <GrxPreferenceCategory android:title="@string/cat_long_press" />
+
+            <GrxSingleSelection android:title="@string/long_press_action" android:key="b_bbkmap_lp" android:defaultValue="0"
+                grx:clickRules="-1#b_bbkmap_ca_lp#,NULL,"
+                grx:optionsArray="@array/mapping_all_options" grx:valuesArray="@array/mapping_all_options_values"  />
+            <GrxAccess android:title="@string/select_app_act_short_lp" android:key="b_bbkmap_ca_lp"
+                grx:depRule="ENABLE#b_bbkmap_lp#STRING#-1"
+                grx:showShortcuts="true" grx:showApplications="true" grx:showActivities="true" grx:arrowColor="?complementary_color1" />
+
+
+
+        </PreferenceScreen>
+
+    </GrxPreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	
+    <CenteredText android:checked="true" android:title="@string/common_actions_options" />
+    <Text android:id="@+id/rom_actions_common" android:icon="@drawable/menu_actions_options" android:title="@string/config_common_actions_options"  />
+
+    <CenteredText android:checked="true" android:title="@string/key_mapping_title" />
+    <Group android:id="@+id/keymap" app:collapsed="true" app:collapsible="true">
+    <GroupHeader android:icon="@drawable/menu_key_mapping" android:id="@+id/keymap_header" android:hint="" android:title="@string/key_mapping_title" />
+    <Separator />
+    <Text android:id="@+id/rom_skip_tracks" android:title="@string/skip_tracks_title" app:showIconSpace="true" />
+    <Separator />
+     <Text android:id="@+id/rom_back_key_map" android:title="@string/back_key_mapping" app:showIconSpace="true" />
+     <Separator />
+     <Text android:id="@+id/rom_recents_key_map"  android:title="@string/recents_key_mapping" app:showIconSpace="true" />
+     <Separator />
+     <Text android:id="@+id/rom_home_key_map"  android:title="@string/home_key_mapping"  app:showIconSpace="true" />
+     <Separator />
+     <Text android:id="@+id/rom_power_key_map"  android:title="@string/power_key_mapping" app:showIconSpace="true" />
+     <Separator />
+     <Text android:id="@+id/rom_bixby_key_map"  android:title="@string/bixby_key_mapping" app:showIconSpace="true" />
+     <Separator />
+    </Group>
+
+    <CenteredText android:checked="true" android:title="@string/fbv_title" />
+
+    <Group android:id="@+id/fbv" app:collapsed="true" app:collapsible="true">
+        <GroupHeader android:icon="@drawable/menu_fbv" android:id="@+id/fbv_header" android:hint="" android:title="@string/fbv_title" />
+        <Separator />
+        <Text android:id="@+id/rom_fbv_config" android:title="@string/fbv_config" app:showIconSpace="true" />
+        <Separator />
+        <Text android:id="@+id/rom_fbv_actions" android:title="@string/fbv_actions" app:showIconSpace="true" />
+        <Separator />
+     </Group>
+
+
+
+
+<!--    <Text android:id="@+id/rom_battery_led" android:icon="@drawable/g_noti_manager" android:title="@string/battery_led" /> -->
+
+
+
+<!--
+
+
+
+      -->
+
+
+    <!--
+        <Group android:id="@+id/lock_screen_options" app:collapsed="true" app:collapsible="true">
+        <GroupHeader android:icon="@drawable/menu_bloqueo_icon" android:id="@+id/lock_screen_header" android:hint="" android:title="@string/lock_screen_options_menu" />
+            <Separator />
+            <Text android:id="@+id/rom_lock_screen_main" android:title="@string/lock_screen_behaviour" app:showIconSpace="true" />
+            <Separator />
+
+        </Group>
+ -->
+
+
+    </menu>
