@@ -59,7 +59,7 @@
 
     <!-- Common extra Broadcast Action - When the attribute commonBcExtra is found in a pref, after value change a broadcast with this action and
     the extra value will be sent -->
-    <string name="grx_common_extra_broadcast">com.grx.settings</string>
+    <string name="grx_common_extra_broadcast">com.mods.grx.SERVICES</string>
 
 
     <bool name="grxb_confirmKillpackage_default">false</bool>
