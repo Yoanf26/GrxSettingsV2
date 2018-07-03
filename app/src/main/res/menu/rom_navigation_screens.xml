@@ -2,7 +2,18 @@
 <menu
     xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
+
+    <Group android:id="@+id/systemui" app:collapsed="true" app:collapsible="true">
+        <GroupHeader android:icon="@drawable/menu_fbv" android:id="@+id/systemui_header" android:hint="" android:title="Options SystemUI" android:textColor="#ff0099cb"/>
+        <Separator />
+        <Text android:id="@+id/rom_systemui" android:title="Options Batterie" app:showIconSpace="true" />
+        <Separator />
+      
+     </Group>
 	
+	
+	 
     <CenteredText android:checked="true" android:title="@string/common_actions_options" />
     <Text android:id="@+id/rom_actions_common" android:icon="@drawable/menu_actions_options" android:title="@string/config_common_actions_options"  />
 

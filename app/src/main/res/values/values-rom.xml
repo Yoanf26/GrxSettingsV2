@@ -572,12 +572,6 @@
     </string-array>
 
 
-    <string name="sb_positions">Views Positions</string>
-    <string name="sb_positions_us">User Screen SB Views Positions</string>
-    <string name="sb_positions_ls">Lock Screen SB Views Positions</string>
-    <string name="sb_positions_help">Set main views of group of views positions and sort them out inside the selected area</string>
-
-
     <string-array name="sb_views_positions_options">
         <item>Net Speed View</item>
         <item>System Icons</item>
@@ -615,17 +609,7 @@
 
 
 
-    <string-array name="sb_postions_options">
-        <item>Left</item>
-        <item>Center</item>
-        <item>Right</item>
-    </string-array>
-    <string-array name="sb_positions_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
+   
 
     <string-array name="buttons_style_entries">
         <item>Full Screen photo</item>

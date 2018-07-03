@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grx="http://schemas.android.com/apk/res-auto">
+   
+    <GrxPreferenceCategory android:title="Choix de la batterie"/>
+
+          <GrxSwitchPreference android:title="Batterie Stock"
+              android:key="asc_stock_battery_visibility"
+              android:defaultValue="true"
+              android:summaryOn="Montrer"
+              grx:killpackage="com.android.systemui"
+              grx:confirmKillpackage="true"/>
+
+    <GrxSwitchPreference android:title="Batterie 3Minit"
+                 android:key="asc1_switch_3minit"
+                 android:defaultValue="false"
+                 android:summaryOn="Montrer"
+                 android:summaryOff="Cacher"
+                 grx:killpackage="com.android.systemui"
+                 grx:confirmKillpackage="true"/>
+          
+        </PreferenceScreen>
+
+
+
+
+

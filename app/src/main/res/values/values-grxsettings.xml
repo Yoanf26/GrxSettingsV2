@@ -148,11 +148,11 @@
     <string name="grxs_flower">Flower</string>
     <string name="grxs_square">Square</string>
     <string name="grxs_reboot_dialog_title">Reboot device?</string>
-    <string name="grxs_reboot_dialog_message">This preference requires the phone to be rebooted to take effect.\nDo you want to reboot your device now?</string>
+    <string name="grxs_reboot_dialog_message">Ce choix nécessite de redémarrer le téléphone.\nVoulez-vous redémarrer maintenant?</string>
     <string name="grxs_reboot_not_possible">Reboot could not be done. Make sure either your app is inside the privileged folder or your phone is rooted. For now, reboot manually the phone for the changes to take effect.</string>
     <string name="grxs_reboot_problem">Problem trying rebooting!!!</string>
     <string name="grxs_killpackage_dialog_title">Restart %1$s ?</string>
-    <string name="grxs_killpackage_dialog_message">For the change to take effect, this preference needs the following app to be restarted: %1$s\nPress OK to make it now or later manually reboot your phone</string>
+    <string name="grxs_killpackage_dialog_message">Ce choix nécessite de redémarrer cette application: %1$s\nPressez OK pour la redémarrer maintant ou CANCEL pour annuler</string>
     <string name="grxs_noroot_granted">No root permission!!</string>
     <string name="grxs_noroot_action_possible">This action requires root permission for this application!!</string>
     <string name="grxs_script_dialog_title">Authorize this action</string>
