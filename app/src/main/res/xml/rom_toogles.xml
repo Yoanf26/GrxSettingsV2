@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grx="http://schemas.android.com/apk/res-auto">
+   
+    <GrxPreferenceCategory android:title="Nombre de Toogles et Icones de Notifications visibles"/>
+
+
+
+ 
+    <GrxSingleSelection android:title="Nombre de Toogles visibles"
+        android:key="sysui_qqs_count"
+        grx:arrowColor="?complementary_color2" android:defaultValue="6"
+        grx:optionsArray="@array/sb_toogles_nb"  grx:valuesArray="@array/sb_toogles_nb_values"
+        grx:systemType="secure"/>
+		
+	 <GrxMultipleSelection android:title="Afficher ou cacher les icones de Notif" 
+        android:key="icon_blacklist" grx:separator=","
+        grx:arrowColor="?complementary_color2" android:defaultValue="rotate,"
+        grx:optionsArray="@array/sb_hide_views_options"  grx:valuesArray="@array/sb_hide_views_values"
+        grx:systemType="secure"/>
+
+
+
+
+
+</PreferenceScreen>

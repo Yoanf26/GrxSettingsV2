@@ -18,10 +18,13 @@
                  android:summaryOff="Cacher"
                  grx:killpackage="com.android.systemui"
                  grx:confirmKillpackage="true"/>
-          
-        </PreferenceScreen>
 
 
 
 
 
+
+
+
+
+</PreferenceScreen>

@@ -5,12 +5,20 @@
 
 
     <Group android:id="@+id/systemui" app:collapsed="true" app:collapsible="true">
-        <GroupHeader android:icon="@drawable/menu_fbv" android:id="@+id/systemui_header" android:hint="" android:title="Options SystemUI" android:textColor="#ff0099cb"/>
+        <GroupHeader android:icon="@drawable/ic_system_ui" android:id="@+id/systemui_header" android:hint="" android:title="Options SystemUI" android:textColor="#ff0099cb"/>
         <Separator />
-        <Text android:id="@+id/rom_systemui" android:title="Options Batterie" app:showIconSpace="true" />
+
+        <Text android:id="@+id/rom_battery" android:icon="@drawable/battery" android:title="Options Batterie" app:showIconSpace="true" />
         <Separator />
-      
-     </Group>
+
+        <Text android:id="@+id/rom_clock" android:icon="@drawable/horloge" android:title="Options Heure et Date" app:showIconSpace="true" />
+        <Separator />
+
+        <Text android:id="@+id/rom_toogles" android:icon="@drawable/systemuiicons" android:title="Options Toogles" app:showIconSpace="true" />
+        <Separator />
+
+    </Group>
+
 	
 	
 	 

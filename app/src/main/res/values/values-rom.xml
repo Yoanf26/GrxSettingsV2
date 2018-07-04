@@ -15,6 +15,7 @@
 
 
 
+### Remap
 
         <string-array name="mapping_all_options_values">
             <item>0</item>
@@ -215,8 +216,6 @@
 
 
 
-
-
         <string name="skip_tracks_category">Skip tracks when screen is off</string>
         <string name="info_skip_tracks">After the phone goes to deep sleep without playing music, volume buttons cannot play - stop music. Use in that situation other keys (power, home) to play - stop </string>
         <string name="enable_skip_tracks">Enable Skip Tracks</string>
@@ -278,6 +277,9 @@
         <string name="cat_single_tap">Single Tap Action</string>
         <string name="cat_double_tap">Double Tap Action</string>
         <string name="cat_long_press">Long Press Action</string>
+
+		
+### Missing
 
     <string name="clock">Clock</string>
     <string name="battery_text">Battery Text</string>
@@ -454,59 +456,7 @@
     <string name="wifi_calling">Wifi Calling/Volte</string>
 
 
-    <string-array name="sb_hide_views_options">
-        <item>@string/battery_and_text</item>
-        <item>@string/clock</item>
-        <item>@string/mobile</item>
-        <item>@string/wifi</item>
-        <item>@string/airplane</item>
-        <item>@string/nfc</item>
-        <item>@string/bluetooth</item>
-        <item>@string/alarm</item>
-        <item>@string/cast</item>
-        <item>@string/wifi_p2p</item>
-        <item>@string/wifi_calling</item>
-        <item>@string/location</item>
-        <item>@string/volume</item>
-        <item>@string/power_saving</item>
-        <item>@string/data_saver</item>
-        <item>@string/hotspot</item>
-        <item>@string/zen</item>
-        <item>@string/rcs</item>
-        <item>@string/wearable_gear</item>
-        <item>@string/private_mode</item>
-        <item>@string/secure_mode</item>
-        <item>@string/smart_network</item>
-        <item>@string/headset</item>
-        <item>@string/rotation</item>
-    </string-array>
-
-    <string-array name="sb_hide_views_values">
-        <item>battery</item>
-        <item>clock</item>
-        <item>mobile</item>
-        <item>wifi</item>
-        <item>airplane</item>
-        <item>nfc_on</item>
-        <item>bluetooth</item>
-        <item>alarm_clock</item>
-        <item>cast</item>
-        <item>wifi_p2p</item>
-        <item>ims_volte</item>
-        <item>location</item>
-        <item>volume</item>
-        <item>power_saver</item>
-        <item>data_saver</item>
-        <item>hotspot</item>
-        <item>zen</item>
-        <item>com.samsung.rcs</item>
-        <item>wearable_gear</item>
-        <item>private_mode</item>
-        <item>secure</item>
-        <item>smart_network</item>
-        <item>headset</item>
-        <item>rotate</item>
-    </string-array>
+    
 
 
     <string name="status_bar_mods">Status Bar Mods</string>
@@ -690,7 +640,178 @@
     <string name="vibrate_actions_soff">Vibrate with screen off actions</string>
 
 
+	
+	### Cacher icones notifs
+	
+<string-array name="sb_hide_views_values">
+        <item>battery</item>
+        <item>mobile</item>
+        <item>wifi</item>
+        <item>airplane</item>
+        <item>nfc_on</item>
+        <item>bluetooth</item>
+        <item>alarm_clock</item>
+        <item>cast</item>
+        <item>wifi_p2p</item>
+        <item>ims_volte</item>
+        <item>location</item>
+        <item>volume</item>
+        <item>power_saver</item>
+        <item>data_saver</item>
+        <item>hotspot</item>
+        <item>headset</item>
+        <item>rotate</item>
+    </string-array>
+	
+	
+    <string-array name="sb_hide_views_options">
+        <item>Batterie et texte</item>
+        <item>Données et réseau mobile</item>
+        <item>Wifi</item>
+        <item>Mode Avion</item>
+        <item>NFC</item>
+        <item>Bluetooth</item>
+        <item>Alarme</item>
+        <item>Cast</item>
+        <item>Wifi p2p</item>
+        <item>Appels Wifi</item>
+        <item>GPS</item>
+        <item>Volume</item>
+        <item>Economie enregie</item>
+        <item>Economie de données</item>
+        <item>Hotspot</item>
+        <item>Casque et micro</item>
+        <item>Rotation</item>
+    </string-array>
 
+
+	### Nombre des toogles
+	
+    <string-array name="sb_toogles_nb_values">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+
+
+    </string-array>
+
+    <string-array name="sb_toogles_nb">
+        <item>4 Toogles visibles</item>
+        <item>5 Toogles visibles</item>
+        <item>6 Toogles visibles</item>
+        <item>7 Toogles visibles</item>
+        <item>8 Toogles visibles</item>
+        <item>9 Toogles visibles</item>
+
+    </string-array>
+	
+	
+	### Heure et date
+	
+	 <string-array name="qclock_date_display_entries">
+        <item>Cacher la Date</item>
+        <item>Petite écriture</item>
+        <item>Ecriture Normale</item>
+    </string-array>
+    <string-array name="qclock_date_display_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="qclock_date_format_entries_values">
+        <item>dd/MM/yy</item>
+        <item>MM/dd/yy</item>
+        <item>yyyy-MM-dd</item>
+        <item>yyyy-dd-MM</item>
+        <item>dd-MM-yyyy</item>
+        <item>MM-dd-yyyy</item>
+        <item>MMM dd</item>
+        <item>MMM dd, yyyy</item>
+        <item>MMMM dd, yyyy</item>
+        <item>EEE</item>
+        <item>EEE dd</item>
+        <item>EEE dd/MM</item>
+        <item>EEE MM/dd</item>
+        <item>EEE dd MMM</item>
+        <item>EEE MMM dd</item>
+        <item>EEE MMMM dd</item>
+        <item>EEEE dd/MM</item>
+        <item>EEEE MM/dd</item>
+    </string-array>
+    <string-array name="qclock_date_position_entries">
+        <item>Avant heure</item>
+        <item>Après heure</item>
+    </string-array>
+    <string-array name="qclock_date_position_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="qclock_date_style_entries">
+        <item>Normal</item>
+        <item>Minuscules</item>
+        <item>Majuscules</item>
+    </string-array>
+    <string-array name="qclock_date_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="qclock_font_style_entries">
+        <item>Utiliser les fonts système</item>
+        <item>Italic</item>
+        <item>Bold</item>
+        <item>Bold italic</item>
+        <item>Light</item>
+        <item>Light italic</item>
+        <item>Thin</item>
+        <item>Thin italic</item>
+        <item>Crisp italic</item>
+        <item>Thick fat</item>
+        <item>Dense bold italic</item>
+        <item>Medium</item>
+        <item>Medium italic</item>
+    </string-array>
+    <string-array name="qclock_font_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+       
+    </string-array>
+    <string-array name="qclock_style_entries">
+        <item>A Droite</item>
+        <item>Au Centre</item>
+        <item>A Gauche</item>
+
+    </string-array>
+    <string-array name="qclock_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+
+    </string-array>
+    <string-array name="qentries_status_bar_am_pm">
+        <item>"Ne pas montrer"</item>
+        <item>Petit AM/PM</item>
+        <item>Normal AM/PM</item>
+    </string-array>
+    <string-array name="qvalues_status_bar_am_pm">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 
 </resources>
 
