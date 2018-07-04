@@ -114,7 +114,8 @@
 
     <GrxAppSelection
         android:title="Application" android:key="press_clock_custom_app"
-        android:dependency="tap_clock_launcher"  />
+        android:dependency="tap_clock_launcher"
+		grx:saveActivityname="true"/>
 
 </PreferenceScreen>
 
