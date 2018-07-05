@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:grx="http://schemas.android.com/apk/res-auto">
-    <GrxPreferenceCategory android:title="@string/skip_tracks_category" />
-	<GrxInfoText android:summary="@string/info_skip_tracks" />
-	  <GrxSwitchPreference android:title="@string/enable_skip_tracks" android:key="b_skip_tracks" android:defaultValue="true" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="SKIP_TRACKS" />
-	  <GrxCheckBoxPreference android:title="@string/double_tap_skip_tracks"  android:key="b_doble_click_skip_tracks"
+    <GrxPreferenceCategory android:title="Plages Musicales Boutons Volume" />
+	<GrxInfoText android:summary="Activation de la lecture, piste suivante et piste précédente via les boutons volume après que le téléphone se mette en veille" />
+	  <GrxSwitchPreference android:title="Activer les plages musicales Suivant/Précédent" android:key="b_skip_tracks" android:defaultValue="true" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="SKIP_TRACKS" />
+	  <GrxCheckBoxPreference android:title="Double clic pour Lire/Arreter la Lecture"  android:key="b_doble_click_skip_tracks"
 		  grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="SKIP_TRACKS" android:dependency="b_skip_tracks" android:defaultValue="true" />
 
     
