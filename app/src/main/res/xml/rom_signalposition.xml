@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grx="http://schemas.android.com/apk/res-auto">
+   
+   
+      
+   
+    <GrxPreferenceCategory android:title="Position Signal/Wifi/Data"/>
+
+		  
+		  	
+		  <GrxSingleSelection
+		   
+		 grx:optionsArray="@array/SignalPositionName"
+		android:title="Position du signal"
+		android:key="signal_position"
+		android:summary=""
+		android:defaultValue="0"
+		grx:valuesArray="@array/SignalPositionValue" />
+		
+	
+				 
+						 
+
+
+
+
+
+
+
+
+
+</PreferenceScreen>

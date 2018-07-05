@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grx="http://schemas.android.com/apk/res-auto">
+   
+   
+      
+   
+    <GrxPreferenceCategory android:title="Head-up Notifications"/>
+	
+	 <GrxSwitchPreference
+
+        android:title="Head-up Notifications"
+        android:summaryOff="Désactivé"
+        android:summaryOn="Activé"
+        android:defaultValue="true"
+        android:key="heads_up_notifications_enabled" />
+
+
+		  
+		  	
+		  
+	
+				 
+						 
+
+
+
+
+
+
+
+
+
+</PreferenceScreen>

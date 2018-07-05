@@ -5,7 +5,7 @@
     <GrxPreferenceCategory android:title="Réglages de l'heure et de la Date"/>
 
 
-		 <GrxSwitchPreference android:title="Heure" 
+		 <GrxSwitchPreference android:title="Afficher l'heure" 
 		 android:key="status_bar_clock" 
 		 android:defaultValue="true" 
 		 android:summaryOn="On" 
@@ -112,10 +112,13 @@
         grx:killpackage="com.android.systemui"
         grx:confirmKillpackage="true" />
 
-    <GrxAppSelection
-        android:title="Application" android:key="press_clock_custom_app"
-        android:dependency="tap_clock_launcher"
-		grx:saveActivityname="true"/>
+
+
+	<GrxAccess android:title="Selectionnez une activité"
+		android:key="press_clock_custom_app_act_shc"
+		android:summary="Selectionnez ce qui est lancé lors d'un appui sur l'heure"
+		grx:showShortcuts="true"
+		grx:showApplications="true" grx:showActivities="true" />
 
 </PreferenceScreen>
 

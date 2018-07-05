@@ -3,61 +3,80 @@
     xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
+    <CenteredText android:checked="true" android:title="Options SysytemUI" />
 
     <Group android:id="@+id/systemui" app:collapsed="true" app:collapsible="true">
-        <GroupHeader android:icon="@drawable/ic_system_ui" android:id="@+id/systemui_header" android:hint="" android:title="Options SystemUI" android:textColor="#ff0099cb"/>
+        <GroupHeader android:icon="@drawable/ic_system_ui" android:id="@+id/systemui_header" android:hint="" android:title="Options de la Barre de Statut" android:textColor="#ff0099cb"/>
         <Separator />
 
-        <Text android:id="@+id/rom_battery" android:icon="@drawable/battery" android:title="Options Batterie" app:showIconSpace="true" />
+        <Text android:id="@+id/rom_battery" android:icon="@drawable/ico_accesos" android:title="Options Batterie" app:showIconSpace="true" />
         <Separator />
 
-        <Text android:id="@+id/rom_clock" android:icon="@drawable/horloge" android:title="Options Heure et Date" app:showIconSpace="true" />
+        <Text android:id="@+id/rom_clock" android:icon="@drawable/demo_icon_5" android:title="Options Heure et Date" app:showIconSpace="true" />
         <Separator />
 
-        <Text android:id="@+id/rom_toogles" android:icon="@drawable/systemuiicons" android:title="Options Toogles" app:showIconSpace="true" />
+        <Text android:id="@+id/rom_toogles" android:icon="@drawable/menu_be_icon" android:title="Options Toogles" app:showIconSpace="true" />
         <Separator />
+		
+		<Text android:id="@+id/rom_quicklaunch" android:icon="@drawable/ico_ordenar" android:title="Options QuickLauncher" app:showIconSpace="true" />
+        <Separator />
+
+        <Text android:id="@+id/rom_signalposition" android:icon="@drawable/demo_icon_4" android:title="Position du signal" app:showIconSpace="true" />
+        <Separator />
+
+        <Text android:id="@+id/rom_headup" android:icon="@drawable/demo_icon_lists" android:title="Notifications Head-up" app:showIconSpace="true" />
+        <Separator />
+
+        <Text android:id="@+id/rom_virtualbuttons" android:icon="@drawable/demo_buttons" android:title="Boutons Virtuels" app:showIconSpace="true" />
+        <Separator />
+
+        <Text android:id="@+id/rom_iconscolors" android:icon="@drawable/ic_theme" android:title="Option des Icônes" app:showIconSpace="true" />
+        <Separator />
+
 
     </Group>
 
-	
-	
-	 
-    <CenteredText android:checked="true" android:title="@string/common_actions_options" />
-    <Text android:id="@+id/rom_actions_common" android:icon="@drawable/menu_actions_options" android:title="@string/config_common_actions_options"  />
 
-    <CenteredText android:checked="true" android:title="@string/key_mapping_title" />
+
+
+    <CenteredText android:checked="true" android:title="Options Remappage des touches" />
+
+
     <Group android:id="@+id/keymap" app:collapsed="true" app:collapsible="true">
-    <GroupHeader android:icon="@drawable/menu_key_mapping" android:id="@+id/keymap_header" android:hint="" android:title="@string/key_mapping_title" />
-    <Separator />
-    <Text android:id="@+id/rom_skip_tracks" android:title="@string/skip_tracks_title" app:showIconSpace="true" />
-    <Separator />
-     <Text android:id="@+id/rom_back_key_map" android:title="@string/back_key_mapping" app:showIconSpace="true" />
-     <Separator />
-     <Text android:id="@+id/rom_recents_key_map"  android:title="@string/recents_key_mapping" app:showIconSpace="true" />
-     <Separator />
-     <Text android:id="@+id/rom_home_key_map"  android:title="@string/home_key_mapping"  app:showIconSpace="true" />
-     <Separator />
-     <Text android:id="@+id/rom_power_key_map"  android:title="@string/power_key_mapping" app:showIconSpace="true" />
-     <Separator />
-     <Text android:id="@+id/rom_bixby_key_map"  android:title="@string/bixby_key_mapping" app:showIconSpace="true" />
-     <Separator />
+        <GroupHeader android:icon="@drawable/menu_key_mapping" android:id="@+id/keymap_header" android:hint="" android:title="Remappage des Touches" />
+        <Separator />
+        <Text android:id="@+id/rom_actions_common" android:icon="@drawable/menu_actions_options" android:title="Options générales"  />
+
+        <Text android:id="@+id/rom_skip_tracks" android:title="Volume et Musique" app:showIconSpace="true" />
+        <Separator />
+        <Text android:id="@+id/rom_back_key_map" android:title="Touche Retour" app:showIconSpace="true" />
+        <Separator />
+        <Text android:id="@+id/rom_recents_key_map"  android:title="Touche Applications récentes" app:showIconSpace="true" />
+        <Separator />
+        <Text android:id="@+id/rom_home_key_map"  android:title="Touche Home" app:showIconSpace="true" />
+        <Separator />
+        <Text android:id="@+id/rom_power_key_map"  android:title="Touche Marche/Arrêt" app:showIconSpace="true" />
+        <Separator />
+        <Text android:id="@+id/rom_bixby_key_map"  android:title="Touche Bixby" app:showIconSpace="true" />
+        <Separator />
     </Group>
 
-    <CenteredText android:checked="true" android:title="@string/fbv_title" />
+    <CenteredText android:checked="true" android:title="Options Balle Flottante" />
 
     <Group android:id="@+id/fbv" app:collapsed="true" app:collapsible="true">
-        <GroupHeader android:icon="@drawable/menu_fbv" android:id="@+id/fbv_header" android:hint="" android:title="@string/fbv_title" />
+        <GroupHeader android:icon="@drawable/menu_fbv" android:id="@+id/fbv_header" android:hint="" android:title="Balle Flottante" />
         <Separator />
-        <Text android:id="@+id/rom_fbv_config" android:title="@string/fbv_config" app:showIconSpace="true" />
+        <Text android:id="@+id/rom_fbv_config" android:title="Configuration générale" app:showIconSpace="true" />
         <Separator />
-        <Text android:id="@+id/rom_fbv_actions" android:title="@string/fbv_actions" app:showIconSpace="true" />
+        <Text android:id="@+id/rom_fbv_actions" android:title="Réglage des Actions" app:showIconSpace="true" />
         <Separator />
-     </Group>
+    </Group>
 
 
 
 
-<!--    <Text android:id="@+id/rom_battery_led" android:icon="@drawable/g_noti_manager" android:title="@string/battery_led" /> -->
+
+    <!--    <Text android:id="@+id/rom_battery_led" android:icon="@drawable/g_noti_manager" android:title="@string/battery_led" /> -->
 
 
 

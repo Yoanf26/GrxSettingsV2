@@ -2,72 +2,72 @@
 <PreferenceScreen
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:grx="http://schemas.android.com/apk/res-auto">
 
-    <GrxSwitchPreference android:title="@string/enable_rcents_km" android:key="b_rk_map_enabled" android:defaultValue="false"
+    <GrxSwitchPreference android:title="Remappage de la touche Applis Récentes" android:key="b_rk_map_enabled" android:defaultValue="false"
         grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="RECENTS_KEY_MAPPING"/>
 
-    <GrxSeekBar android:title="@string/double_tap_maxtime" android:key="b_rk_dt_timeout" android:dependency="b_rk_map_enabled"
+    <GrxSeekBar android:title="Temps de double pression" android:key="b_rk_dt_timeout" android:dependency="b_rk_map_enabled"
         android:defaultValue="140" grx:minValue="100" grx:maxValue="700" grx:units=" mS" grx:showPopup="true" grx:interval="20"
         grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="RECENTS_KEY_MAPPING"/>
 
-    <GrxInfoText android:summary="@string/press_button_to_apply"  android:dependency="b_rk_map_enabled"/>
+    <GrxInfoText android:summary="Après avoir choisi vos options dans chaque catégories, veuillez pressez n'importe quel bouton pour appliquer les changements.Vous n'avez pas besoin de le faire à chaque changements, uniquement à la fin de la configuration."  android:dependency="b_rk_map_enabled"/>
 
     <GrxPreferenceCategory android:title="hidden" android:dependency="b_rk_map_enabled" grx:hiddenCategory="true" >
 
-        <PreferenceScreen android:title="@string/when_lock_screen" android:key="rls"  >
+        <PreferenceScreen android:title="Ecran de Verrouillage" android:key="rls"  >
 
-            <GrxPreferenceCategory android:title="@string/recents_lock_screen" grx:centerHorizontal="true"/>
+            <GrxPreferenceCategory android:title="Remappe de la touche Applis Récentes dans l'écran de verrouillage" grx:centerHorizontal="true"/>
 
-            <GrxSingleSelection android:title="@string/single_tap_action" android:key="b_rkmap_st_LS"  android:defaultValue="0"
+            <GrxSingleSelection android:title="Action simple pression" android:key="b_rkmap_st_LS"  android:defaultValue="0"
                 grx:optionsArray="@array/actions_lock_screen_options" grx:valuesArray="@array/actions_lock_screen_values"  />
 
-            <GrxSingleSelection android:title="@string/double_tap_action" android:key="b_rkmap_dt_LS" android:defaultValue="0"
+            <GrxSingleSelection android:title="Action double pression" android:key="b_rkmap_dt_LS" android:defaultValue="0"
                 grx:optionsArray="@array/actions_lock_screen_options" grx:valuesArray="@array/actions_lock_screen_values"  />
 
-            <GrxSingleSelection android:title="@string/long_press_action" android:key="b_rkmap_lp_LS" android:defaultValue="0"
+            <GrxSingleSelection android:title="Action longue pression" android:key="b_rkmap_lp_LS" android:defaultValue="0"
                 grx:optionsArray="@array/actions_lock_screen_options" grx:valuesArray="@array/actions_lock_screen_values"  />
 
             <GrxButtonPreference android:title="" android:key="rkbutton1"   grx:button_Style="big"
-                grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="RECENTS_KEY_MAPPING" />
+                grx:button_Text="Pressez pour appliquer" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="RECENTS_KEY_MAPPING" />
 
         </PreferenceScreen>
 
-        <PreferenceScreen android:title="@string/when_home_screen" android:key="rhs">
+        <PreferenceScreen android:title="Ecran utilisateur" android:key="rhs">
 
-            <GrxPreferenceCategory android:title="@string/recents_home_screen" grx:centerHorizontal="true"/>
+            <GrxPreferenceCategory android:title="Remappe de la touche Applis Récentes dans les écrans utilisateur" grx:centerHorizontal="true"/>
 
 
             <GrxButtonPreference android:key="rkbutton2"  grx:button_Style="big"
-                grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="RECENTS_KEY_MAPPING" />
+                grx:button_Text="Pressez pour appliquer" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="RECENTS_KEY_MAPPING" />
 
-            <GrxPreferenceCategory android:title="@string/cat_single_tap" />
+            <GrxPreferenceCategory android:title="Actions simple pression" />
 
 
-            <GrxSingleSelection android:title="@string/single_tap_action" android:key="b_rkmap_st" android:defaultValue="3"
+            <GrxSingleSelection android:title="Action simple pression" android:key="b_rkmap_st" android:defaultValue="3"
                 grx:clickRules="-1#b_rkmap_ca_st#,NULL,"
                 grx:optionsArray="@array/mapping_all_options" grx:valuesArray="@array/mapping_all_options_values"  />
 
-            <GrxAccess android:title="@string/select_app_act_short_st" android:key="b_rkmap_ca_st"
+            <GrxAccess android:title="Appli, activité ou raccourci simple pression" android:key="b_rkmap_ca_st"
                 grx:depRule="ENABLE#b_rkmap_st#STRING#-1"
                 grx:showShortcuts="true" grx:showApplications="true" grx:showActivities="true" grx:arrowColor="?complementary_color1" />
 
 
 
-            <GrxPreferenceCategory android:title="@string/cat_double_tap" />
+            <GrxPreferenceCategory android:title="Actions double pression" />
 
 
-            <GrxSingleSelection android:title="@string/double_tap_action" android:key="b_rkmap_dt" android:defaultValue="12"
+            <GrxSingleSelection android:title="Action double pression" android:key="b_rkmap_dt" android:defaultValue="12"
                 grx:clickRules="-1#b_rkmap_ca_dt#,NULL,"
                 grx:optionsArray="@array/mapping_all_options" grx:valuesArray="@array/mapping_all_options_values"  />
-            <GrxAccess android:title="@string/select_app_act_short_st" android:key="b_rkmap_ca_dt"
+            <GrxAccess android:title="Appli, activité ou raccourci double pression" android:key="b_rkmap_ca_dt"
                 grx:depRule="ENABLE#b_rkmap_dt#STRING#-1"
                 grx:showShortcuts="true" grx:showApplications="true" grx:showActivities="true" grx:arrowColor="?complementary_color1" />
 
-            <GrxPreferenceCategory android:title="@string/cat_long_press" />
+            <GrxPreferenceCategory android:title="Actions longue pression" />
 
-            <GrxSingleSelection android:title="@string/long_press_action" android:key="b_rkmap_lp" android:defaultValue="34"
+            <GrxSingleSelection android:title="Action longue pression" android:key="b_rkmap_lp" android:defaultValue="34"
                 grx:clickRules="-1#b_rkmap_ca_lp#,NULL,"
                 grx:optionsArray="@array/mapping_all_options" grx:valuesArray="@array/mapping_all_options_values"  />
-            <GrxAccess android:title="@string/select_app_act_short_lp" android:key="b_rkmap_ca_lp"
+            <GrxAccess android:title="Appli, activité ou raccourci longue pression" android:key="b_rkmap_ca_lp"
                 grx:depRule="ENABLE#b_rkmap_lp#STRING#-1"
                 grx:showShortcuts="true" grx:showApplications="true" grx:showActivities="true" grx:arrowColor="?complementary_color1" />
 

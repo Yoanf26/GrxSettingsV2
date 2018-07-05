@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grx="http://schemas.android.com/apk/res-auto">
+   
+   
+        <GrxButtonPreference  grx:button_Style="big" 
+	       grx:button_Text="Pressez ici pour appliquer les réglages"  
+		   grx:killpackage="com.android.systemui" 
+		   grx:confirmKillpackage="false"/>
+   
+    <GrxPreferenceCategory android:title="Options QuickLauncher"/>
+
+          <GrxSwitchPreference android:title="QuickLauncher" 
+		  android:key="recents_quick_launch_toggle" 
+		  android:defaultValue="false" 
+		  android:summaryOn="QuickLauncher est activé" 
+		  android:summaryOff="QuickLauncher est désactivé" />
+		  
+		  	
+		  <GrxSingleSelection
+		 grx:optionsArray="@array/quicklaunch_num"
+		android:title="Nombre de boutons visibles"
+		android:key="quick_launch_vis_buttons"
+		android:summary=""
+              android:dependency="recents_quick_launch_toggle"
+		android:defaultValue="3"
+		grx:valuesArray="@array/quicklaunch_num_values" />
+		
+	<GrxSwitchPreference android:title="Visibilité du texte"
+                 android:key="quick_launch_text_visible"
+        android:dependency="recents_quick_launch_toggle"
+                 android:defaultValue="true" 
+		  android:summaryOn="Montrer" 
+		  android:summaryOff="Cacher" />
+		  
+	
+	<GrxColorPicker
+		 android:title="Couleur du texte" 
+		 android:key="quick_launch_text_color"
+        android:dependency="recents_quick_launch_toggle"
+		 android:defaultValue="0xffffffff"
+		 grx:showAlphaSlider="true" />
+		 
+		 
+    <GrxColorPicker
+		 android:title="Couleur du fond" 
+		 android:key="quick_launch_background_color"
+        android:dependency="recents_quick_launch_toggle"
+		 android:defaultValue="0x00000000"
+		 grx:showAlphaSlider="true" />
+		  
+		  
+    <GrxSwitchPreference android:title="Bouton ajouter"
+          android:key="quick_launch_show_add"
+        android:dependency="recents_quick_launch_toggle"
+          android:defaultValue="true" 
+		  android:summaryOn="Montrer" 
+		  android:summaryOff="Cacher" />
+				 
+				 
+
+
+</PreferenceScreen>

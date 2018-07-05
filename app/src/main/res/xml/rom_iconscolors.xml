@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grx="http://schemas.android.com/apk/res-auto">
+   
+   
+            
+        
+   
+	
+	<GrxPreferenceCategory android:title="Couleur des Icones" />
+	
+
+	 <GrxButtonPreference
+		 grx:button_Style="big"
+	       grx:button_Text="Pressez ici pour appliquer les réglages"  
+		   grx:killpackage="com.android.systemui" 
+		   grx:confirmKillpackage="false"/>
+	
+	<GrxSwitchPreference
+	
+	 android:title="Couleur Globale" 
+	 android:key="asc1_system_icons_color" 
+	 android:defaultValue="false" 
+	 android:summaryOn="Activé" 
+	 android:summaryOff="Désactivé" />
+	
+   <GrxColorPicker
+
+
+		android:key="asc1_systemicons"
+		android:title="Couleur Globale"
+		android:dependency="asc1_system_icons_color"
+        android:defaultValue="0xffffffff"/>
+             	
+		  
+
+				 
+						
+
+
+</PreferenceScreen>

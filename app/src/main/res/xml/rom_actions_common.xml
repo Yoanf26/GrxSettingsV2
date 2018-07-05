@@ -2,34 +2,36 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android" xmlns:grx="http://schemas.android.com/apk/res-auto">
 
-    <GrxPreferenceCategory android:title="@string/apps_protection"/>
+    <GrxPreferenceCategory android:title="Protection des Applications"/>
 
-    <GrxMultipleAppSelection android:title="@string/kill_white_list" android:key="b_killapp_wl" android:summary="@string/kill_white_list_sum"
+    <GrxMultipleAppSelection android:title="Liste blanche Tuer l'Application" android:key="b_killapp_wl" android:summary="Choisissez les applications à ne pas tuer"
         grx:showSystemapps="true" grx:saveActivityname="false" />
 
-    <GrxMultipleAppSelection android:title="@string/remove_white_list" android:key="b_remove_wl" android:summary="@string/remove_white_list_sum"
+    <GrxMultipleAppSelection android:title="Liste blanche Retirer l'Application" android:key="b_remove_wl" android:summary="Choisissez les applications à ne pas retirer des récents"
         grx:showSystemapps="true" grx:saveActivityname="false" />
 
-    <GrxMultipleAppSelection android:title="@string/clear_white_list" android:key="b_clear_wl" android:summary="@string/clear_white_list_sum"
+    <GrxMultipleAppSelection android:title="Liste blanche Nettoyer la RAM" android:key="b_clear_wl" android:summary="Choisissez les applications à concerver lors du nettoyage de la RAM"
         grx:showSystemapps="true" grx:saveActivityname="false" />
 
     <GrxButtonPreference android:title="" android:key="pkbutton1"   grx:button_Style="big"
         grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="COMMON_OPTIONS" />
 
 
-    <GrxPreferenceCategory android:title="@string/show_toasts_cat"/>
 
-    <GrxCheckBoxPreference android:title="@string/show_toast_kill" android:key="b_toast_kill" android:defaultValue="true"/>
-    <GrxCheckBoxPreference android:title="@string/show_toast_removed" android:key="b_toast_removed" android:defaultValue="true"/>
-    <GrxCheckBoxPreference android:title="@string/show_toast_allkilled" android:key="b_toast_allkilled" android:defaultValue="true"/>
-    <GrxCheckBoxPreference android:title="@string/show_toast_allremoved" android:key="b_toast_allremoved" android:defaultValue="true"/>
+    <GrxPreferenceCategory android:title="Messages pop-up (toasts)"/>
+
+    <GrxCheckBoxPreference android:title="Pop-Up Tuer Application" android:key="b_toast_kill" android:defaultValue="true"/>
+    <GrxCheckBoxPreference android:title="Pop-Up Retrait Application" android:key="b_toast_removed" android:defaultValue="true"/>
+    <GrxCheckBoxPreference android:title="Pop-Up lorsque tout est Tué" android:key="b_toast_allkilled" android:defaultValue="true"/>
+    <GrxCheckBoxPreference android:title="Pop-Up lorque tout est Retiré" android:key="b_toast_allremoved" android:defaultValue="true"/>
 
     <GrxButtonPreference android:title="" android:key="pkbutton2"   grx:button_Style="big"
         grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="COMMON_OPTIONS" />
 
-    <GrxPreferenceCategory android:title="@string/vibration"/>
 
-    <GrxCheckBoxPreference android:title="@string/vibration" android:key="b_vibrate_scr_off" android:defaultValue="true"/>
+    <GrxPreferenceCategory android:title="Vibrations"/>
+
+    <GrxCheckBoxPreference android:title="Vibrations" android:key="b_vibrate_scr_off" android:defaultValue="true"/>
 
     <GrxButtonPreference android:title="" android:key="pkbutton3"   grx:button_Style="big"
         grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="COMMON_OPTIONS" />

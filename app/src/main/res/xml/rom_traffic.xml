@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grx="http://schemas.android.com/apk/res-auto">
+
+    <GrxPreferenceCategory android:title="Traffic Internet"/>
+
+    <GrxSingleSelection
+
+        grx:optionsArray="@array/traffic_state_items"
+        grx:valuesArray="@array/traffic_state_values"
+
+        android:title="Afficher le Traffic"
+        android:key="network_traffic_state"
+        android:defaultValue="3"
+        android:summary="" />
+
+
+
+    <GrxSwitchPreference
+
+        android:title="Unité d'affichage"
+        android:summaryOff="Afficher en Bits (défaut)"
+        android:summaryOn="Afficher en Bytes"
+        android:defaultValue="false"
+        android:key="network_traffic_unit"
+        android:dependency="network_traffic_state"/>
+
+    <GrxSwitchPreference
+
+        android:title="Montrer les flèches"
+        android:key="network_traffic_show_arrows"
+        android:defaultValue="true"
+        android:summaryOff="Cacher"
+        android:summaryOn="Montrer"
+        android:dependency="network_traffic_state"/>
+
+    <GrxSingleSelection
+
+        android:title="Position des flèches"
+        android:key="network_traffic_arrows_position"
+        android:dependency="network_traffic_show_arrows"
+        android:defaultValue="0"
+        grx:valuesArray="@array/arrow_position_values"
+        grx:optionsArray="@array/arrow_position_entries"/>
+
+
+
+    <GrxSwitchPreference
+
+        android:title="Auto-Cacher si traffic faible"
+        android:key="network_traffic_autohide"
+        android:defaultValue="false"
+        android:summaryOff="Toujours afficher"
+        android:summaryOn="Auto-cacher activé"/>
+
+
+    <GrxSeekBar
+
+        android:title="Echelle de l'Auto-Cacher"
+        grx:units="Kb"
+        grx:maxValue="100"
+        android:key="network_traffic_threshold"
+        android:defaultValue="10"
+        android:dependency="network_traffic_autohide"/>
+
+
+
+    <GrxSingleSelection
+
+        android:title="Style de Police"
+        android:key="network_traffic_text_style"
+        android:defaultValue="0"
+        grx:valuesArray="@array/traffic_style_entry_values"
+        grx:optionsArray="@array/traffic_style_entries"/>
+
+
+
+    <GrxSeekBar
+
+        android:title="Echelle de taille du texte"
+        android:key="network_traffic_scale"
+        grx:maxValue="11"
+        android:defaultValue="10"/>
+
+
+
+    <GrxSwitchPreference
+
+        android:title="Séparation des couleurs"
+        android:key="network_traffic_global_color"
+        android:defaultValue="true"
+        android:summaryOn="Couleurs réglables séparément"
+        android:summaryOff="Couleur unique"/>
+
+    <GrxColorPicker
+
+        android:title="Couleur Globale"
+        android:key="network_traffic_color"
+        android:defaultValue="0xffffffff"/>
+
+    <GrxColorPicker
+
+        android:title="Couleur du texte d'Upload"
+        android:defaultValue="0xffffffff"
+        android:key="network_traffic_upload_color"
+        android:dependency="network_traffic_global_color"/>
+
+    <GrxColorPicker
+
+        android:title="Couleur du texte de Download"
+        android:defaultValue="0xffffffff"
+        android:key="network_traffic_download_color"
+        android:dependency="network_traffic_global_color"/>
+
+    <GrxColorPicker
+
+        android:title="Couleur des flèches"
+        android:key="network_traffic_arrow_color"
+        android:defaultValue="0xffffffff"
+        android:dependency="network_traffic_global_color"/>
+
+
+
+
+
+
+</PreferenceScreen>

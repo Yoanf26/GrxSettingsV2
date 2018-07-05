@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grx="http://schemas.android.com/apk/res-auto">
+   
+   
+      
+   
+	
+	<GrxPreferenceCategory android:title="Bouton Lock" android:icon="@drawable/lock"/>
+	
+	<GrxCheckBoxPreference
+
+        android:icon="@drawable/apprecentdroit" 
+		android:title="A droite" 
+		android:key="cocoyaya_rightcornerlock" 
+		android:defaultValue="false" 
+		android:summaryOn="Marche" 
+		android:summaryOff="Arrêt" />
+
+	<GrxCheckBoxPreference
+		android:icon="@drawable/apprecentmilieu"
+		android:title="Au centre"
+		android:key="cocoyaya_centerlock"
+		android:defaultValue="false"
+		android:summaryOn="Marche"
+		android:summaryOff="Arrêt" />
+
+
+	<GrxCheckBoxPreference 
+	android:icon="@drawable/apprecentgauche" 
+	android:title="A gauche" 
+	android:key="cocoyaya_leftcornerlock" 
+	android:defaultValue="false" 
+	android:summaryOn="Marche" 
+	android:summaryOff="Arrêt" />
+	
+
+      
+		
+	<GrxPreferenceCategory android:title="Bouton Home" android:icon="@drawable/home"/>  
+		    
+			
+        
+     <GrxCheckBoxPreference  
+	 android:icon="@drawable/apprecentdroit" 
+	 android:title="A droite" 
+	 android:key="cocoyaya_rightcornerhome" 
+	 android:defaultValue="false" 
+	 android:summaryOn="Marche" 
+	 android:summaryOff="Arrêt" />
+
+	<GrxCheckBoxPreference
+		android:icon="@drawable/apprecentmilieu"
+		android:title="Au centre"
+		android:key="cocoyaya_centerhome"
+		android:defaultValue="false"
+		android:summaryOn="Marche"
+		android:summaryOff="Arrêt" />
+	 
+   <GrxCheckBoxPreference  
+   android:icon="@drawable/apprecentgauche" 
+   android:title="A gauche" 
+   android:key="cocoyaya_leftcornerhome" 
+   android:defaultValue="false" 
+   android:summaryOn="Marche" 
+   android:summaryOff="Arrêt" />
+   
+
+   
+   <GrxPreferenceCategory android:title="Bouton Applications Recents" android:icon="@drawable/recents"/> 
+        
+   <GrxCheckBoxPreference 
+   android:icon="@drawable/apprecentdroit" 
+   android:title="A droite" 
+   android:key="cocoyaya_rightcornertask" 
+   android:defaultValue="false" 
+   android:summaryOn="Marche" 
+   android:summaryOff="Arrêt" />
+
+	<GrxCheckBoxPreference
+		android:icon="@drawable/apprecentmilieu"
+		android:title="Au centre"
+		android:key="cocoyaya_centertask"
+		android:defaultValue="false"
+		android:summaryOn="Marche"
+		android:summaryOff="Arrêt" />
+
+
+	<GrxCheckBoxPreference
+   android:icon="@drawable/apprecentgauche" 
+   android:title="A gauche" 
+   android:key="cocoyaya_leftcornertask" 
+   android:defaultValue="false" 
+   android:summaryOn="Marche" 
+   android:summaryOff="Arrêt" />
+             	
+		  
+	
+				 
+						
+
+
+</PreferenceScreen>

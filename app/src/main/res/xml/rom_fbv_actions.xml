@@ -3,151 +3,151 @@
     xmlns:android="http://schemas.android.com/apk/res/android" xmlns:grx="http://schemas.android.com/apk/res-auto">
 
 
-    <PreferenceScreen android:title="@string/fbv_single_tap" android:key="pst"  >
+    <PreferenceScreen android:title="B.F Actions simple pression" android:key="pst"  >
 
-        <GrxPreferenceCategory android:title="@string/fbv_single_tap" />
+        <GrxPreferenceCategory android:title="Action simple pressionp" />
 
         <GrxButtonPreference android:title="" android:key="rkbutton1"   grx:button_Style="big"
-            grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="RECENTS_KEY_MAPPING" />
+            grx:button_Text="Pressez pour appliquer" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="RECENTS_KEY_MAPPING" />
 
-        <GrxSingleSelection android:title="@string/when_lock_screen" android:key="fbv_st_action_ls"  android:defaultValue="0"
+        <GrxSingleSelection android:title="Ecran de verrouillage" android:key="fbv_st_action_ls"  android:defaultValue="0"
             grx:optionsArray="@array/actions_lock_screen_options" grx:valuesArray="@array/actions_lock_screen_values"  />
 
-        <GrxSingleSelection android:title="@string/when_home_screen" android:key="fbv_st_action"  android:defaultValue="0"
+        <GrxSingleSelection android:title="Ecran Bureau" android:key="fbv_st_action"  android:defaultValue="0"
             grx:optionsArray="@array/mapping_all_options" grx:valuesArray="@array/mapping_all_options_values"
             grx:clickRules="-1#fbv_st_action_uri#,NULL,"/>
 
-        <GrxAccess android:title="@string/select_app_act_short_st" android:key="fbv_st_action_uri"
+        <GrxAccess android:title="Appli, activité ou raccourci simple pression" android:key="fbv_st_action_uri"
             grx:depRule="ENABLE#fbv_st_action#STRING#-1"
             grx:showShortcuts="true" grx:showApplications="true" grx:showActivities="true" grx:arrowColor="?complementary_color1" />
 
         <GrxButtonPreference android:title="" android:key="rkbutton0"   grx:button_Style="big"
-            grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="FBV_ACTIONS" />
+            grx:button_Text="Pressez pour appliquer" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="FBV_ACTIONS" />
 
 
     </PreferenceScreen>
 
 
-    <PreferenceScreen android:title="@string/fbv_double_tap" android:key="pdt"  >
+    <PreferenceScreen android:title="B.F Actions double pression" android:key="pdt"  >
 
-        <GrxPreferenceCategory android:title="@string/fbv_double_tap" />
+        <GrxPreferenceCategory android:title="Action double pression" />
 
         <GrxButtonPreference android:title="" android:key="rkbutton1"   grx:button_Style="big"
-            grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="RECENTS_KEY_MAPPING" />
+            grx:button_Text="Pressez pour appliquer" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="RECENTS_KEY_MAPPING" />
 
-        <GrxSingleSelection android:title="@string/when_lock_screen" android:key="fbv_dt_action_ls"  android:defaultValue="8"
+        <GrxSingleSelection android:title="Ecran de verrouillage" android:key="fbv_dt_action_ls"  android:defaultValue="8"
             grx:optionsArray="@array/actions_lock_screen_options" grx:valuesArray="@array/actions_lock_screen_values"  />
 
-        <GrxSingleSelection android:title="@string/when_home_screen" android:key="fbv_dt_action"  android:defaultValue="8"
+        <GrxSingleSelection android:title="Ecran Bureau" android:key="fbv_dt_action"  android:defaultValue="8"
             grx:optionsArray="@array/mapping_all_options" grx:valuesArray="@array/mapping_all_options_values"
             grx:clickRules="-1#fbv_dt_action_uri#,NULL,"/>
 
-        <GrxAccess android:title="@string/select_app_act_short_st" android:key="fbv_dt_action_uri"
+        <GrxAccess android:title="Appli, activité ou raccourci double pression" android:key="fbv_dt_action_uri"
             grx:depRule="ENABLE#fbv_dt_action#STRING#-1"
             grx:showShortcuts="true" grx:showApplications="true" grx:showActivities="true" grx:arrowColor="?complementary_color1" />
 
         <GrxButtonPreference android:title="" android:key="rkbutton0"   grx:button_Style="big"
-            grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="FBV_ACTIONS" />
+            grx:button_Text="Pressez pour appliquer" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="FBV_ACTIONS" />
 
 
     </PreferenceScreen>
 
 
 
-    <PreferenceScreen android:title="@string/fbv_swipe_up" android:key="pswu"  >
+    <PreferenceScreen android:title="B.F Actions glissé haut" android:key="pswu"  >
 
-        <GrxPreferenceCategory android:title="@string/fbv_swipe_up" />
+        <GrxPreferenceCategory android:title="Action glissé haut" />
 
 
         <GrxButtonPreference android:title="" android:key="rkbutton1"   grx:button_Style="big"
-            grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="RECENTS_KEY_MAPPING" />
+            grx:button_Text="Pressez pour appliquer" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="RECENTS_KEY_MAPPING" />
 
-        <GrxSingleSelection android:title="@string/when_lock_screen" android:key="fbv_swu_action_ls"  android:defaultValue="0"
+        <GrxSingleSelection android:title="Ecran de verrouillage" android:key="fbv_swu_action_ls"  android:defaultValue="0"
             grx:optionsArray="@array/actions_lock_screen_options" grx:valuesArray="@array/actions_lock_screen_values"  />
 
-        <GrxSingleSelection android:title="@string/when_home_screen" android:key="fbv_swu_action"  android:defaultValue="10"
+        <GrxSingleSelection android:title="Ecran Bureau" android:key="fbv_swu_action"  android:defaultValue="10"
             grx:optionsArray="@array/mapping_all_options" grx:valuesArray="@array/mapping_all_options_values"
             grx:clickRules="-1#fbv_swu_action_uri#,NULL,"/>
 
-        <GrxAccess android:title="@string/select_app_act_short_st" android:key="fbv_swu_action_uri"
+        <GrxAccess android:title="Appli, activité ou raccourci simple pression" android:key="fbv_swu_action_uri"
             grx:depRule="ENABLE#fbv_swu_action#STRING#-1"
             grx:showShortcuts="true" grx:showApplications="true" grx:showActivities="true" grx:arrowColor="?complementary_color1" />
 
         <GrxButtonPreference android:title="" android:key="rkbutton0"   grx:button_Style="big"
-            grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="FBV_ACTIONS" />
+            grx:button_Text="Pressez pour appliquer" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="FBV_ACTIONS" />
 
     </PreferenceScreen>
 
 
-    <PreferenceScreen android:title="@string/fbv_swipe_down" android:key="pswd"  >
+    <PreferenceScreen android:title="B.F Actions glissé bas" android:key="pswd"  >
 
-        <GrxPreferenceCategory android:title="@string/fbv_swipe_down"/>
+        <GrxPreferenceCategory android:title="Action glissé bas"/>
 
         <GrxButtonPreference android:title="" android:key="rkbutton1"   grx:button_Style="big"
-            grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="RECENTS_KEY_MAPPING" />
+            grx:button_Text="Pressez pour appliquer" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="RECENTS_KEY_MAPPING" />
 
-        <GrxSingleSelection android:title="@string/when_lock_screen" android:key="fbv_swd_action_ls"  android:defaultValue="9"
+        <GrxSingleSelection android:title="Ecran de verrouillage" android:key="fbv_swd_action_ls"  android:defaultValue="9"
             grx:optionsArray="@array/actions_lock_screen_options" grx:valuesArray="@array/actions_lock_screen_values"  />
 
-        <GrxSingleSelection android:title="@string/when_home_screen" android:key="fbv_swd_action"  android:defaultValue="9"
+        <GrxSingleSelection android:title="Ecran Bureau" android:key="fbv_swd_action"  android:defaultValue="9"
             grx:optionsArray="@array/mapping_all_options" grx:valuesArray="@array/mapping_all_options_values"
             grx:clickRules="-1#fbv_swd_action_uri#,NULL,"/>
 
-        <GrxAccess android:title="@string/select_app_act_short_st" android:key="fbv_swd_action_uri"
+        <GrxAccess android:title="Appli, activité ou raccourci simple pression" android:key="fbv_swd_action_uri"
             grx:depRule="ENABLE#fbv_swd_action#STRING#-1"
             grx:showShortcuts="true" grx:showApplications="true" grx:showActivities="true" grx:arrowColor="?complementary_color1" />
 
         <GrxButtonPreference android:title="" android:key="rkbutton0"   grx:button_Style="big"
-            grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="FBV_ACTIONS" />
+            grx:button_Text="Pressez pour appliquer" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="FBV_ACTIONS" />
 
     </PreferenceScreen>
 
 
-    <PreferenceScreen android:title="@string/fbv_swipe_left" android:key="pswl"  >
+    <PreferenceScreen android:title="B.F Actions glissé gauche" android:key="pswl"  >
 
-        <GrxPreferenceCategory android:title="@string/fbv_swipe_left"/>
+        <GrxPreferenceCategory android:title="Action glissé gauche"/>
 
 
         <GrxButtonPreference android:title="" android:key="rkbutton1"   grx:button_Style="big"
-            grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="RECENTS_KEY_MAPPING" />
+            grx:button_Text="Pressez pour appliquer" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="RECENTS_KEY_MAPPING" />
 
-        <GrxSingleSelection android:title="@string/when_lock_screen" android:key="fbv_swl_action_ls"  android:defaultValue="0"
+        <GrxSingleSelection android:title="Ecran de verrouillage" android:key="fbv_swl_action_ls"  android:defaultValue="0"
             grx:optionsArray="@array/actions_lock_screen_options" grx:valuesArray="@array/actions_lock_screen_values"  />
 
-        <GrxSingleSelection android:title="@string/when_home_screen" android:key="fbv_swl_action"  android:defaultValue="1"
+        <GrxSingleSelection android:title="Ecran Bureau" android:key="fbv_swl_action"  android:defaultValue="1"
             grx:optionsArray="@array/mapping_all_options" grx:valuesArray="@array/mapping_all_options_values"
             grx:clickRules="-1#fbv_swl_action_uri#,NULL,"/>
 
-        <GrxAccess android:title="@string/select_app_act_short_st" android:key="fbv_swl_action_uri"
+        <GrxAccess android:title="Appli, activité ou raccourci simple pression" android:key="fbv_swl_action_uri"
             grx:depRule="ENABLE#fbv_swl_action#STRING#-1"
             grx:showShortcuts="true" grx:showApplications="true" grx:showActivities="true" grx:arrowColor="?complementary_color1" />
 
         <GrxButtonPreference android:title="" android:key="rkbutton0"   grx:button_Style="big"
-            grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="FBV_ACTIONS" />
+            grx:button_Text="Pressez pour appliquer" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="FBV_ACTIONS" />
 
     </PreferenceScreen>
 
 
-    <PreferenceScreen android:title="@string/fbv_swipe_right" android:key="pswr"  >
+    <PreferenceScreen android:title="B.F Actions glissé droite" android:key="pswr"  >
 
 
-        <GrxPreferenceCategory android:title="@string/fbv_swipe_right" />
+        <GrxPreferenceCategory android:title="Action glissé droite" />
         <GrxButtonPreference android:title="" android:key="rkbutton1"   grx:button_Style="big"
-            grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="RECENTS_KEY_MAPPING" />
+            grx:button_Text="@Pressez pour appliquer" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="RECENTS_KEY_MAPPING" />
 
-        <GrxSingleSelection android:title="@string/when_lock_screen" android:key="fbv_swr_action_ls"  android:defaultValue="0"
+        <GrxSingleSelection android:title="Ecran de verouillage" android:key="fbv_swr_action_ls"  android:defaultValue="0"
             grx:optionsArray="@array/actions_lock_screen_options" grx:valuesArray="@array/actions_lock_screen_values"  />
 
-        <GrxSingleSelection android:title="@string/when_home_screen" android:key="fbv_swr_action"  android:defaultValue="14"
+        <GrxSingleSelection android:title="Ecran Bureau" android:key="fbv_swr_action"  android:defaultValue="14"
             grx:optionsArray="@array/mapping_all_options" grx:valuesArray="@array/mapping_all_options_values"
             grx:clickRules="-1#fbv_swr_action_uri#,NULL,"/>
 
-        <GrxAccess android:title="@string/select_app_act_short_st" android:key="fbv_swr_action_uri"
+        <GrxAccess android:title="Appli, activité ou raccourci simple pression" android:key="fbv_swr_action_uri"
             grx:depRule="ENABLE#fbv_swr_action#STRING#-1"
             grx:showShortcuts="true" grx:showApplications="true" grx:showActivities="true" grx:arrowColor="?complementary_color1" />
 
         <GrxButtonPreference android:title="" android:key="rkbutton0"   grx:button_Style="big"
-            grx:button_Text="@string/press_to_apply" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="FBV_ACTIONS" />
+            grx:button_Text="Pressez pour appliquer" grx:button_backgroundColor="?complementary_color3" grx:commonBcExtra="UPDATE" grx:commonBcExtraValue="FBV_ACTIONS" />
 
     </PreferenceScreen>
 

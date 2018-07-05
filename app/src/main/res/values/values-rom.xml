@@ -58,43 +58,43 @@
         </string-array>
 
         <string-array name="mapping_all_options">
-            <item>@string/nothing</item>
-            <item>@string/back_key</item>
-            <item>@string/home_key</item>
-            <item>@string/recents_key</item>
-            <item>@string/power_key</item>
-            <item>@string/goto_home</item>
-            <item>@string/toggle_recentse</item>
-            <item>@string/power_menu</item>
-            <item>@string/screen_off</item>
-            <item>@string/expand_notipanel</item>
-            <item>@string/screenshot</item>
-            <item>@string/killapp</item>
-            <item>@string/toggle_lastapp</item>
-            <item>@string/custom_access</item>
-            <item>@string/clear_memory</item>
-            <item>@string/kiallall</item>
-            <item>@string/expand_settings</item>
-            <item>@string/change_soundmode</item>
-            <item>@string/playstop_music</item>
-            <item>@string/next_track</item>
-            <item>@string/previous_track</item>
-            <item>@string/launch_camera</item>
-            <item>@string/launch_camera_magnifier</item>
-            <item>@string/bixby_home</item>
-            <item>@string/noti_settings</item>
-            <item>@string/assistant</item>
-            <item>@string/voice_cmd</item>
-            <item>@string/lock_phone</item>
-            <item>@string/flash_light</item>
-            <item>@string/partial_screenshot</item>
-            <item>@string/screen_on_off</item>
-            <item>@string/volume_panel</item>
-            <item>@string/remove_app_recents</item>
-            <item>@string/remove_all_recents</item>
-            <item>@string/inject_menu</item>
-            <item>@string/split_screen</item>
-            <item>@string/bixby_voice</item>
+            <item>Rien</item>
+            <item>Retour</item>
+            <item>Home</item>
+            <item>Applications récentes</item>
+            <item>Marche/Arrêt</item>
+            <item>Retour sur le bureau</item>
+            <item>Ouvrir Applis récentes</item>
+            <item>Menu redémarrer</item>
+            <item>Eteindre Ecran</item>
+            <item>Abaisser barre de statut</item>
+            <item>Capturer Ecran</item>
+            <item>Tuer Application</item>
+            <item>Ouvrir la dernière Appli</item>
+            <item>Appli, Activité ou raccourci</item>
+            <item>Nettoyer la RAM</item>
+            <item>Tout tuer</item>
+            <item>Deployer les paramètres</item>
+            <item>Changer le mode Son</item>
+            <item>Lire/Stop Musique</item>
+            <item>Prochaine piste</item>
+            <item>Piste précédente</item>
+            <item>Lancer la caméra</item>
+            <item>Lancer caméra magnifier</item>
+            <item>Lancer Bixby</item>
+            <item>Paramètres de Notification</item>
+            <item>Assistant</item>
+            <item>Commandes vocales</item>
+            <item>Verrouiller le téléphone</item>
+            <item>Lampe de poche</item>
+            <item>Capture Ecran partielle</item>
+            <item>Eteindre Ecran</item>
+            <item>Deployer Ecran volume</item>
+            <item>Retirer la dernière Appli des récents</item>
+            <item>Retirer toutes les Applis récentes</item>
+            <item>Injecter Menu</item>
+            <item>Multi-fenêtres</item>
+            <item>Bixby voix</item>
 
         </string-array>
 
@@ -141,21 +141,21 @@
 
 
     <string-array name="actions_lock_screen_options">
-        <item>@string/nothing</item>
-        <item>@string/expand_notipanel</item>
-        <item>@string/expand_settings</item>
-        <item>@string/screenshot</item>
-        <item>@string/partial_screenshot</item>
-        <item>@string/bixby_home</item>
-        <item>@string/power_menu</item>
-        <item>@string/clear_memory</item>
-        <item>@string/screen_off</item>
-        <item>@string/flash_light</item>
-        <item>@string/bixby_voice</item>
-        <item>@string/playstop_music</item>
-        <item>@string/next_track</item>
-        <item>@string/previous_track</item>
-        <item>@string/change_soundmode</item>
+        <item>Rien</item>
+        <item>Deployer les Notifications</item>
+        <item>Deployer les Paramètres</item>
+        <item>Capture Ecran</item>
+        <item>Capture Ecran partielle</item>
+        <item>Lancer Bixby</item>
+        <item>Marche/Arrêt</item>
+        <item>Nettoyer la RAM</item>
+        <item>Eteindre Ecran</item>
+        <item>Lampe de poche</item>
+        <item>Bixby voix</item>
+        <item>Lire/Stop Musique</item>
+        <item>Prochaine piste</item>
+        <item>Piste précédente</item>
+        <item>Changer mode Son</item>
 
     </string-array>
 
@@ -184,17 +184,17 @@
     <string name="screen_on_bixby_home">Screen on + Bixby Voice</string>
 
     <string-array name="actions_screen_off_options">
-        <item>@string/nothing</item>
-        <item>@string/screen_on</item>
-        <item>@string/flash_light</item>
-        <item>@string/playstop_music</item>
-        <item>@string/next_track</item>
-        <item>@string/previous_track</item>
-        <item>@string/change_soundmode</item>
-        <item>@string/screen_on_expand_noti</item>
-        <item>@string/screen_on_expand_sett</item>
-        <item>@string/screen_on_bixby_voice</item>
-        <item>@string/screen_on_bixby_home</item>
+        <item>Rien</item>
+        <item>Allumer Ecran</item>
+        <item>Lampe de poche</item>
+        <item>Lire/Stop Musique</item>
+        <item>Prochaine piste</item>
+        <item>Piste précédente</item>
+        <item>Changer mode Son</item>
+        <item>Déployer les Notifications</item>
+        <item>Déployer les Paramètres</item>
+        <item>Bixby voix</item>
+        <item>Lancer Bixby</item>
     </string-array>
 
 
@@ -811,6 +811,68 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+    </string-array>
+	
+	
+	### Quicklaunch
+	
+	
+	<string-array name="quicklaunch_num">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="quicklaunch_num_values">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+	
+	
+	### Traffic
+	
+	<string-array name="traffic_state_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="traffic_state_items">
+        <item>Désactivé</item>
+        <item>Upload seulement</item>
+        <item>Download seulement</item>
+        <item>Upload et Download</item>
+    </string-array>
+    <string-array name="arrow_position_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="arrow_position_entries">
+        <item>Derrière</item>
+        <item>Devant</item>
+    </string-array>
+    <string-array name="traffic_style_entries">
+        <item>Normal</item>
+        <item>Bold</item>
+        <item>Italic</item>
+        <item>Bold italic</item>
+    </string-array>
+    <string-array name="traffic_style_entry_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+	
+	### Position signal
+	
+	 <string-array name="SignalPositionName">
+        <item>A Gauche</item>
+        <item>A Droite</item>
+    </string-array>
+    <string-array name="SignalPositionValue">
+        <item>0</item>
+        <item>1</item>
     </string-array>
 
 </resources>
